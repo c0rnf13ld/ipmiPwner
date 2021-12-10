@@ -10,15 +10,27 @@ The script has by default a list of most common users so if no valid user is pro
 
 ## Parameters:
 - --help   : Displays the help panel
-** Required Arguments **
+
+
+**Required Arguments**
+
+
 - --host   : The host of the target
-** Cracking Arguments **
+
+
+**Cracking Arguments**
+
+
 - -c       : Choose an option to crack the hash, the -pW and -oH is required for this option, options: john | python
 - -uW      : The user wordlist to use, this is enabled by default if the user is False since the program has a small users dictionary by default.
 - -pW      : The password wordlist to crack the hash, This parameter is required if cracking parameter is enabled
 - -oH      : Output hash file, This parameter is required if cracking parameter is enabled
 - -oC      : Output cracked hash file, This parameter is required if cracking with python is used.
-** Optional Arguments **
+
+
+**Optional Arguments**
+
+
 - -p       : The port where the service runs, by default: 623
 - -u       : Valid user to extract the hash
 - -d       : Delay between each request in case of errors, by default: 20
