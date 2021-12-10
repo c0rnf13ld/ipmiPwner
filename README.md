@@ -25,7 +25,8 @@ The script has by default a list of most common users so if no valid user is pro
 - -r       : User validation attempts in case of errors, by default: 2
 
 ## Examples:
-```python3 ipmipwner.py --host 192.168.1.12 -c john -oH hash -pW /usr/share/wordlists/rockyou.txt
+```
+python3 ipmipwner.py --host 192.168.1.12 -c john -oH hash -pW /usr/share/wordlists/rockyou.txt
 python3 ipmipwner.py --host 192.168.1.12 -oH hash
 python3 ipmipwner.py --host 192.168.1.12 -uW /opt/SecLists/Usernames/cirt-default-usernames.txt -oH hash
 python3 ipmipwner.py --host 192.168.1.12 -u root -c john -pW /usr/share/wordlists/rockyou.txt -oH hash
