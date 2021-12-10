@@ -23,7 +23,7 @@ def readHashFile(file):
 		content = f.read()
 	if "$rakp$" not in content:
 		print("[!] Wrong hash format")
-		print("[*] The hash must be in this format:\n$rakp$a4a3a2a084eb02009f3878cf036e81939a45a0fbafcd2e2568cba2261152126f7c9f27115e721094a123456789abcdefa123456789abcdef140d41646d696e6973747261746f72$37fffaa8ddc4a0edbdf7af7460bc04dca4c8f22a"); sys.exit()
+		print("[*] The hash must be in this format:\n$rakp$salt$hash"); sys.exit()
 	salt = re.findall(r"\$rakp\$(.*)\$", content)[0]
 	hash = re.findall(r"\$rakp\$.*\$(.*)$", content)[0]
 	return hash, salt
