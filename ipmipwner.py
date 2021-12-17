@@ -129,7 +129,7 @@ def cracking(crack, password_wordlist, output_hash_file, cracked_file):
 		time.sleep(2)
 		subprocess.run(shlex.split(f"john --wordlist={password_wordlist} \"{output_hash_file}\""))
 	if crack == "python":
-		print(f"{status} Starting the hash cracking with {cyan}python\n")
+		print(f"{status} Starting the hash cracking with {lgcyan}python\n")
 		subprocess.run(shlex.split(f"python3 rakpcrk.py -f \"{output_hash_file}\" -w {password_wordlist} -o \"{cracked_file}\""))
 
 def getHash(host, port, user, output_hash_file, retries, delay, brute=False):
