@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # author: c0rnf13ld
-# un nmap y pa' dentro
+# Como cuando te banea por salir del server xD
+# Puede ser pa?
 
 import sys, signal, subprocess, os, shutil, argparse, shlex, re, socket, time, threading, nmap
 from colorama import Fore, init
