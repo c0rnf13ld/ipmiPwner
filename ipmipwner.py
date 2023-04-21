@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # author: c0rnf13ld
-# Como cuando te banea por salir del server xD
-# Puede ser pa?
+# Thank you s4vitar and your community for everything <3
+# Gracias s4vi papaa por todo, se te quiere <3
 
 import sys, signal, subprocess, os, shutil, argparse, shlex, re, socket, time, threading, nmap
 from colorama import Fore, init
